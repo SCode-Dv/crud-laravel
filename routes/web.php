@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::resource('/alumnos', AlumnoController::class);
+
+Route::get('check', [AlumnoController::class, 'check']);
